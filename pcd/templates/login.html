@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+</head>
+<body background="static/images/background.jpg">
+<div class="row">
+    <div class="col s12 m4">
+        <div id="login-page" class="row">
+            <div class="col s12 z-depth-6 card-panel" style="margin-left:20px">
+                <form class="login-form" action="/sign_in" method="post">
+                    <div class="row">
+                        <h2>&nbsp;Login</h2>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input class="validate" id="email" type="email" name="email" value="">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock_outline</i>
+                            <input id="password" type="password" name="password">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button type="submit" class="btn btn-large waves-effect waves-light col s12" >Logar</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 m6 l6">
+                            <p class="margin medium-small"><a href="#">Novo usuário</a></p>
+                        </div>
+                        <div class="input-field col s6 m6 l6">
+                            <p class="margin right-align medium-small"><a href="#">Esqueceu a senha</a></p>
+                        </div>
+                        <div class="input-field col s12 m12 l12 ">
+                            <p class="margin left-align medium-small"><a href="/">Voltar</a></p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4"></div>
+    <div class="col s12 m4"></div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+</body>
+</html>
